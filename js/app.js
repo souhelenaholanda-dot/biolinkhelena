@@ -84,27 +84,6 @@
       titulo: 'Site oficial da campanha',
       desc: 'Propostas, história e agenda',
       href: SITE.siteOficial
-    },
-    {
-      cor: 't-orange',
-      icone: 'star',
-      titulo: 'Quem é Helena',
-      desc: 'Uma vida inteira do mesmo lado',
-      pagina: 'page-sobre'
-    },
-    {
-      cor: 't-purple',
-      icone: 'flag',
-      titulo: 'Minhas prioridades',
-      desc: 'As quatro bandeiras da campanha',
-      pagina: 'page-prioridades'
-    },
-    {
-      cor: 't-teal',
-      icone: 'heart',
-      titulo: 'Fale comigo',
-      desc: 'Todos os canais em um lugar só',
-      pagina: 'page-contato'
     }
   ];
 
