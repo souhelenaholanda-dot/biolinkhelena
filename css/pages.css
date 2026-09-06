@@ -1,0 +1,167 @@
+/* =========================================================
+   pages.css — subpaginas (Quem sou, Prioridades, Contato)
+   ========================================================= */
+
+.sub__topo{margin-bottom:26px}
+
+.sub__selo{
+  display:grid;
+  place-items:center;
+  width:54px;height:54px;
+  margin-bottom:16px;
+  border-radius:16px;
+  background:linear-gradient(135deg,var(--pink),var(--orange));
+  color:#fff;
+  font-size:1.4rem;
+  box-shadow:0 12px 26px rgba(233,58,93,.3);
+}
+.sub__topo h1{
+  font-size:1.75rem;
+  letter-spacing:-.02em;
+  color:#fff;
+}
+.sub__lead{
+  margin:10px 0 0;
+  font-size:.92rem;
+  line-height:1.6;
+  color:var(--texto-2);
+}
+
+.sub__corpo{font-size:.9rem;line-height:1.7}
+.sub__corpo h2{
+  margin:32px 0 14px;
+  font-size:1.15rem;
+  color:#fff;
+}
+.sub__corpo p{color:var(--texto-2)}
+
+/* ---------- numeros ---------- */
+.numeros{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+  margin:22px 0 6px;
+}
+.num{
+  padding:16px 12px;
+  border-radius:var(--raio-sm);
+  background:var(--card);
+  border:1px solid var(--card-borda);
+  text-align:center;
+}
+.num b{
+  display:block;
+  font-family:var(--brand);
+  font-weight:600;
+  font-size:1.35rem;
+  line-height:1;
+  margin-bottom:.35em;
+  color:var(--orange);
+}
+.num span{
+  display:block;
+  font-size:.68rem;
+  line-height:1.35;
+  color:var(--texto-2);
+}
+
+/* ---------- linha do tempo ---------- */
+.linha{position:relative;padding-left:26px}
+.linha::before{
+  content:"";
+  position:absolute;
+  left:4px;top:6px;bottom:10px;
+  width:2px;
+  border-radius:2px;
+  background:linear-gradient(180deg,var(--pink),var(--orange) 50%,var(--teal));
+}
+.linha li{position:relative;padding-bottom:24px}
+.linha li::before{
+  content:"";
+  position:absolute;
+  left:-26px;top:6px;
+  width:10px;height:10px;
+  border-radius:50%;
+  background:var(--pink);
+  box-shadow:0 0 0 3px var(--fundo);
+}
+.linha li:nth-child(3n+2)::before{background:var(--orange)}
+.linha li:nth-child(3n)::before{background:var(--teal)}
+.linha .ano{
+  display:block;
+  font-family:var(--brand);
+  font-weight:600;
+  font-size:.85rem;
+  color:var(--orange);
+  margin-bottom:.2em;
+}
+.linha h3{font-size:.95rem;color:#fff;margin-bottom:.25em}
+.linha p{margin:0;font-size:.83rem;line-height:1.6}
+
+.nota{
+  margin-top:26px;
+  padding-top:16px;
+  border-top:1px solid rgba(255,255,255,.1);
+  font-size:.72rem!important;
+  line-height:1.5;
+  color:rgba(234,241,247,.42)!important;
+}
+
+/* ---------- blocos de prioridade ---------- */
+.bloco{
+  margin-bottom:16px;
+  padding:20px;
+  border-radius:var(--raio);
+  background:var(--card);
+  border:1px solid var(--card-borda);
+  border-left:4px solid var(--c);
+}
+.bloco__topo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+.bloco__ico{
+  display:grid;
+  place-items:center;
+  width:40px;height:40px;
+  flex:none;
+  border-radius:50%;
+  background:var(--c);
+  color:#fff;
+  font-size:1.15rem;
+}
+.bloco__t{
+  display:block;
+  font-size:1.02rem;
+  font-weight:700;
+  line-height:1.25;
+  color:#fff;
+}
+.bloco__r{
+  display:block;
+  margin-top:2px;
+  font-size:.78rem;
+  color:var(--c);
+  font-weight:500;
+}
+.bloco p{font-size:.85rem;margin-bottom:.9em}
+.bloco ul{display:grid;gap:8px;margin-top:14px}
+.bloco li{
+  display:flex;
+  gap:9px;
+  font-size:.83rem;
+  line-height:1.5;
+  color:var(--texto-2);
+}
+.bloco li .ic{margin-top:.3em;color:var(--c);font-size:.85em}
+
+/* ---------- contato ---------- */
+.contato-lista{display:grid;gap:12px;margin-bottom:26px}
+.sub__cta{display:grid;gap:10px;margin-top:30px}
+
+@media (max-width:400px){
+  .numeros{grid-template-columns:minmax(0,1fr)}
+  .sub__topo h1{font-size:1.5rem}
+}
