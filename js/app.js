@@ -98,6 +98,13 @@
       titulo: 'Minhas prioridades',
       desc: 'As quatro bandeiras da campanha',
       pagina: 'page-prioridades'
+    },
+    {
+      cor: 't-teal',
+      icone: 'heart',
+      titulo: 'Fale comigo',
+      desc: 'Todos os canais em um lugar só',
+      pagina: 'page-contato'
     }
   ];
 
