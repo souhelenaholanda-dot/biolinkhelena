@@ -24,8 +24,7 @@ const SITE = {
   email: '',                                   // AJUSTAR: nao informado
 
   /* --- site oficial --- */
-  // AJUSTAR: trocar pelo dominio proprio quando existir
-  siteOficial: 'https://souhelenaholanda-dot.github.io/helenaholanda/',
+  siteOficial: 'https://helenaholanda5508.com.br',
 
   /* --- dados legais da propaganda eleitoral --- */
   eleicao: 'Eleição 2026',
