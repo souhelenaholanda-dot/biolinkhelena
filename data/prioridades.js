@@ -22,27 +22,28 @@ const PRIORIDADES = [
     ]
   },
   {
-    id: 'neuro',
+    id: 'cuidadores',
     cor: 'orange',
-    icone: 'infinity',
-    titulo: 'Inclusão de neurodivergentes',
-    resumo: 'Quem precisa se adaptar é a sociedade, não a pessoa.',
-    texto: 'TDAH, dislexia, altas habilidades, autismo: formas diferentes de aprender e ' +
-           'produzir. E há um problema que quase ninguém discute — o apoio costuma acabar ' +
-           'quando a pessoa completa 18 anos.',
+    icone: 'cuidar',
+    titulo: 'Cuidar de quem cuida',
+    resumo: 'Quem cuida também precisa ser cuidado.',
+    texto: 'Atrás de cada pessoa que precisa de cuidado existe alguém que abriu mão da ' +
+           'própria vida para cuidar. Nas duas décadas do Centro Helena Holanda eu vi essa ' +
+           'pessoa adoecer, perder a renda e a saúde, sustentando sozinha um cuidado que ' +
+           'deveria ser dividido com o Estado.',
     itens: [
-      'Diagnóstico e acompanhamento também na vida adulta',
-      'Material, prazos e avaliações adaptados',
-      'Emprego com apoio e acompanhamento inicial',
-      'Ambientes de baixo estímulo nos serviços públicos',
-      'Enfrentamento permanente ao capacitismo'
+      'Reconhecimento legal e previdenciário de quem cuida',
+      'Renda para quem abriu mão do emprego, com o BPC protegido',
+      'Direito ao descanso: centros-dia e cuidado temporário',
+      'Saúde mental para o cuidador na rede pública',
+      'Formação gratuita sobre manejo, primeiros socorros e direitos'
     ]
   },
   {
     id: 'pcd',
     cor: 'teal',
     icone: 'wheelchair',
-    titulo: 'Respeito aos PCDs',
+    titulo: 'Respeito às PCDs',
     resumo: 'Acessibilidade não é favor: é direito garantido em lei.',
     texto: 'Fundei o Centro Helena Holanda para oferecer reabilitação a quem não tinha para ' +
            'onde ir, coordenei a política municipal da pessoa com deficiência e levei a pauta ' +
