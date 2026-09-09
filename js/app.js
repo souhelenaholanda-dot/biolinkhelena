@@ -17,6 +17,11 @@
     });
     atual = id;
     window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+
+    /* a conversa da assistente so comeca quando a tela dela aparece */
+    if (id === 'page-chat' && typeof window.iniciarChat === 'function') {
+      window.iniciarChat();
+    }
   }
 
   window.go = function (id) {
@@ -70,6 +75,13 @@
       titulo: 'Falar comigo no WhatsApp',
       desc: SITE.whatsappExibicao,
       href: waLink('Olá, Helena! Vim pelo seu link e quero falar com você.')
+    },
+    {
+      cor: 't-orange',
+      icone: 'chat',
+      titulo: 'Tire uma dúvida rápida',
+      desc: 'Assistente virtual · contato e endereço',
+      pagina: 'page-chat'
     },
     {
       cor: 't-pink',
@@ -176,6 +188,11 @@
         '<span class="lcard__ico">' + ico('instagram') + '</span>' +
         '<span class="lcard__txt"><span class="lcard__t">Instagram</span>' +
         '<span class="lcard__d">@' + SITE.instagram + '</span></span>' +
+        '<span class="lcard__seta">' + ico('arrow') + '</span></a>' +
+      '<a class="lcard t-teal" href="' + SITE.centro.mapa + '" target="_blank" rel="noopener">' +
+        '<span class="lcard__ico">' + ico('pin') + '</span>' +
+        '<span class="lcard__txt"><span class="lcard__t">' + SITE.centro.nome + '</span>' +
+        '<span class="lcard__d">' + SITE.centro.endereco + '</span></span>' +
         '<span class="lcard__seta">' + ico('arrow') + '</span></a>' +
     '</div>' +
     '<p>' + SITE.cidade + ' &middot; ' + SITE.estado + '</p>';

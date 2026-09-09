@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/home.css">
 <link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/chat.css">
 </head>
 <body>
 
@@ -39,6 +40,8 @@
   <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20 12H5m6-6-6 6 6 6"/></symbol>
   <symbol id="i-share" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v13m0-13L8 7m4-4 4 4M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20.5 12.2c0 4-3.8 7.2-8.5 7.2-1 0-2-.15-2.9-.42L3.5 20.5l1.6-3.9a6.9 6.9 0 0 1-2.1-4.9c0-4 3.8-7.2 8.5-7.2s9 3.7 9 7.7Z"/><circle cx="8.6" cy="12.1" r="1.1" fill="currentColor"/><circle cx="12" cy="12.1" r="1.1" fill="currentColor"/><circle cx="15.4" cy="12.1" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21.5s7-5.9 7-11.2a7 7 0 1 0-14 0c0 5.3 7 11.2 7 11.2Z"/><circle cx="12" cy="10.1" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
 </svg>
 
 <div class="app">
@@ -138,10 +141,28 @@
     <div class="sub__corpo" id="contato"></div>
   </section>
 
+  <!-- ===================== ASSISTENTE ===================== -->
+  <section class="pg sub" id="page-chat" hidden>
+    <button class="voltar" onclick="back()"><svg class="ic"><use href="#i-back"></use></svg> Voltar</button>
+
+    <header class="sub__topo">
+      <span class="sub__selo"><svg class="ic"><use href="#i-chat"></use></svg></span>
+      <h1>Fale com a Lena</h1>
+      <p class="sub__lead"><span class="chat-on" aria-hidden="true"></span>Assistente virtual. Ela passa o contato da Helena e diz onde fica o Centro Helena Holanda.</p>
+    </header>
+
+    <div class="chat-area" id="chat-area" aria-live="polite"></div>
+
+    <p class="chat-aviso">A Lena é um atendimento automático, com respostas prontas. Para falar com a Helena e a equipe, use o WhatsApp.</p>
+  </section>
+
 </div>
 
 <script src="data/site.js"></script>
 <script src="data/prioridades.js"></script>
+<script src="chatbot/config.js"></script>
+<script src="chatbot/flows.js"></script>
+<script src="chatbot/engine.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

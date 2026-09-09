@@ -8,3 +8,6 @@ Desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# Ferramentas locais
+.claude/

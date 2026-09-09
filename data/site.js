@@ -14,8 +14,16 @@ const SITE = {
   partido: 'PSD',
   estado: 'Paraíba',
   cidade: 'João Pessoa',
+  formacao: 'Educadora física',
   slogan: 'sempre fez o bem',
   chamada: 'Pensar no bem coletivo é a minha prioridade.',
+
+  /* --- centro helena holanda --- */
+  centro: {
+    nome: 'Centro Helena Holanda',
+    endereco: 'bairro dos Estados, em João Pessoa – PB',
+    mapa: 'https://www.google.com/maps/place/centro+helena+holanda/data=!4m2!3m1!1s0x7acdd43e323db4d:0x3ce09eb907764ffa'
+  },
 
   /* --- contato --- */
   whatsapp: '5583993287247',

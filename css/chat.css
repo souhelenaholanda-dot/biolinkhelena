@@ -1,0 +1,136 @@
+/* =========================================================
+   chat.css — tela da assistente virtual
+   ========================================================= */
+
+.chat-area{
+  display:grid;
+  justify-items:start;
+  gap:4px;
+  min-height:40vh;
+  margin-top:4px;
+}
+
+/* ---------- baloes ---------- */
+.bal{
+  max-width:88%;
+  padding:12px 15px;
+  border-radius:var(--raio);
+  font-size:.88rem;
+  line-height:1.6;
+  animation:balao .3s var(--ease) both;
+}
+@keyframes balao{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
+
+.bal--lena{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  border-radius:6px var(--raio) var(--raio) var(--raio);
+  background:var(--card);
+  border:1px solid var(--card-borda);
+  color:var(--texto-2);
+}
+.bal--lena strong{color:#fff;font-weight:600}
+
+.bal--eu{
+  justify-self:end;
+  border-radius:var(--raio) 6px var(--raio) var(--raio);
+  background:var(--pink);
+  color:#fff;
+  font-weight:500;
+}
+
+.bal__ava{
+  display:grid;
+  place-items:center;
+  width:26px;height:26px;
+  flex:none;
+  margin-top:-1px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--pink),var(--orange));
+  font-family:var(--brand);
+  font-weight:600;
+  font-size:.8rem;
+  color:#fff;
+}
+.bal__txt{flex:1;min-width:0}
+
+/* ---------- "digitando..." ---------- */
+.bal--digitando{align-items:center;padding:14px 15px}
+.bal--digitando span:not(.bal__ava){
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--texto-2);
+  animation:pisca 1.2s infinite;
+}
+.bal--digitando span:nth-of-type(2){animation-delay:.18s}
+.bal--digitando span:nth-of-type(3){animation-delay:.36s}
+@keyframes pisca{
+  0%,60%,100%{opacity:.25;transform:translateY(0)}
+  30%{opacity:1;transform:translateY(-3px)}
+}
+
+/* ---------- respostas rapidas ---------- */
+.chat-chips{
+  justify-self:end;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:8px;
+  width:100%;
+  padding:6px 0 14px;
+  transition:opacity .25s var(--ease);
+}
+.chat-chips.is-off{opacity:.3;pointer-events:none}
+
+.chat-chip{
+  padding:9px 15px;
+  border-radius:999px;
+  background:var(--card);
+  border:1.5px solid var(--card-borda);
+  font-size:.8rem;
+  font-weight:500;
+  line-height:1.2;
+  color:var(--texto);
+  transition:transform .2s var(--ease),background .2s var(--ease),border-color .2s var(--ease);
+}
+.chat-chip:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.14);
+  border-color:rgba(255,255,255,.3);
+}
+.chat-chip--wa{
+  background:rgba(37,211,102,.14);
+  border-color:rgba(37,211,102,.5);
+  color:#5df09a;
+}
+.chat-chip--wa:hover{background:rgba(37,211,102,.24);border-color:#25d366}
+.chat-chip--voltar{opacity:.6;font-weight:400}
+
+/* ---------- aviso de rodape ---------- */
+.chat-aviso{
+  margin-top:22px;
+  padding-top:16px;
+  border-top:1px solid rgba(255,255,255,.1);
+  font-size:.72rem;
+  line-height:1.5;
+  color:rgba(234,241,247,.42);
+}
+
+/* ---------- pontinho de "online" ---------- */
+.chat-on{
+  display:inline-block;
+  width:8px;height:8px;
+  margin-right:.45em;
+  border-radius:50%;
+  background:#25d366;
+  vertical-align:.05em;
+  animation:pulso 1.9s infinite;
+}
+@keyframes pulso{
+  0%,100%{opacity:1}
+  50%{opacity:.3}
+}
