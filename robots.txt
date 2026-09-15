@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biolink.helenaholanda5508.com.br/sitemap.xml

@@ -32,7 +32,7 @@ const SITE = {
   email: '',                                   // AJUSTAR: nao informado
 
   /* --- site oficial --- */
-  siteOficial: 'https://helenaholanda5508.com.br',
+  siteOficial: 'https://www.helenaholanda5508.com.br/',
 
   /* --- dados legais da propaganda eleitoral --- */
   eleicao: 'Eleição 2026',
